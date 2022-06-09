@@ -10,17 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" 
     rel="stylesheet">
+    
 </head>
-  
+
+
 <body>
+   
 
     <header>
-        
-        <h1 
-        id="logo">  
-        <img src="./assets/logo1.svg" alt="Logo dev finance">
+        <img src="./assets/LogoWhite.png" alt="Logo dev finance"> 
+        <h1 id="logo">  
         Finance$
         </h1>
+       
     </header>
 
     <main class="container">
@@ -41,7 +43,7 @@
                    <span>Saídas</span>
                    <img src="./assets/expense.svg" alt="saidas">
                 </h3>
-                    <p id="expenseDisplay"></p>R$ 0,00</p>
+                    <p id="expenseDisplay">R$ 0,00</p>
             </div>
 
             <div class="card total">
@@ -50,35 +52,91 @@
                    <img src="./assets/total.svg" alt="total">
                 </h3>
                     <p id="totalDisplay">R$ 0,00</p>
-            </div>             
-                             
+            </div>                                  
         </section>
 
+        <a href="#" 
+        onclick="Modal.open()"
+        class="button new">
+            + Nova Transação
+        </a>
+
+        <div id="busca">
+            <input type="text" placeholder="Buscar..." class="maxWidth input" id="myInput" onkeyup="tableSearch()" name="search" />
+        </div>
+
+        <table class="top">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+        
+        
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
-
-            <a href="#" 
-            onclick="Modal.open()"
-            class="button new">
-                + Nova Transação
-            </a>
-
-
-            <table id="data-table">
-                <thead>
+           
+            <table class="table" id="data-table" data-filter-control="true" data-show-search-clear-button="true">
+                <!-- <thead>
                     <tr>
                         <th>Descrição</th>
                         <th>Valor</th>
                         <th>Data</th>
                         <th></th>
                     </tr>
-                </thead>
-                <tbody>
-
+                </thead> -->
+                <tbody id="tbody">
+                   
                 </tbody>
             </table>
+        
         </section>
     </main>
+
+    <script type="application/javascript">
+
+    //     const a = [ 
+    //         {letra: 'b', num: 3}, 
+    //         {letra: 'c', num: 2},
+    //         {letra: 'd', num: 1},
+    //     ]
+    //    const sorted = a.sort((b,c)=> {
+    //        return b.num - c.num
+    //    })
+    //    console.log(sorted) 
+       
+     function tableSearch(){
+                let input, filter, table, tr, td, i, txtValue;
+
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("data-table");
+                tr = table.getElementsByTagName("tr");
+
+                for(let i = 0; i< tr.length; i++){
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if(td) {
+                        txtValue = td.textContent || td.innerText;
+                        if(txtValue.toUpperCase().indexOf(filter) > -1){
+                            tr[i].style.display = '';
+                        }else{
+                            tr[i].style.display = 'none';
+                        }
+                    }
+                }
+
+                //console.log()
+            }
+            //  table = document.getElementById("data-table");
+            // table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc", "th-sort-desc"))
+            // sortTableByColumn(document.querySelector("table"), 1, true);
+
+           
+    </script>
 
     <div class="modal-overlay">
         <div class="modal">
@@ -136,20 +194,25 @@
 
                 </form>
             </div>
+
+            
             
         </div>
     </div>
 
     <footer>
         <p>  
-        <img src="./assets/logo1.svg" alt="Logo dev finance">
+        <img src="./assets/logo.PNG" alt="Logo dev finance">
         Finance$
         </p>
         
     </footer>
 
+
+
     <script src="./scripts.js">
-       
+          
+         
     </script>
 
 
