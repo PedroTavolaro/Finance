@@ -348,10 +348,10 @@ footer img {
     }
 
     .top thead th:nth-child(1) {
-        width: 32.4%;
+        width: 72.4%;
     }
     .top thead th:nth-child(2) {
-        width: 27.1%;
+        width: 57.1%;
     }
     .descriptionDiv{
         overflow: none;
