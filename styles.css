@@ -39,7 +39,6 @@ body {
 .container {
     width: min(90vw, 850px);
     margin: auto;
-    border: red 1px solid;
 }
 
 h2{
@@ -197,11 +196,10 @@ header h1 {
 .descriptionDiv{
     overflow: scroll;
     width: 15rem;
-    height: 4rem;
+    height: 6rem;
 }
 .div {
-    border: red 1px solid;
- width: 99%;     
+    width: 99%;     
 }
 
 
@@ -235,7 +233,6 @@ table thead th{
     font-weight: normal;
     padding: 1rem 2rem;
     text-align: left;
-   
     background: fixed;
 }
 
@@ -301,7 +298,6 @@ td.expense {
 #form form input {
     border: none;
     border-radius: 0.2rem;
-
     padding: 0.8rem;
     width: 100%;
 }
@@ -309,7 +305,7 @@ td.expense {
 
 
 .input-group{
-    margin-top: 0.8rem;
+    margin-top: 0.8rem;   
 }
 
 .input-group small {
@@ -333,12 +329,39 @@ footer {
     text-align: center;
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
-
     opacity: 0.6;
 }
 
 footer img {
     width: 1rem;
+}
+
+@media screen and (max-width: 1080px){
+    
+    table thead th{
+        background: white;
+        opacity: 0.6;
+        font-weight: normal;
+        padding: 1rem 2rem;
+        text-align: left;
+        background: fixed;
+    }
+
+    .top thead th:nth-child(1) {
+        width: 32.4%;
+    }
+    .top thead th:nth-child(2) {
+        width: 27.1%;
+    }
+    .descriptionDiv{
+        overflow: none;
+        width: 6.5rem;
+        height: 4rem;
+    }
+
+    .div {
+        width: 99%;     
+    }
 }
 
 @media (min-width: 800px) {
@@ -351,5 +374,6 @@ footer img {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
+
 
 }
