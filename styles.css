@@ -175,7 +175,7 @@ header h1 {
     width: 43.4%;
 }
 .top thead th:nth-child(2) {
-    width: 27.1%;
+    width: 24.1%;
 }
 
 .descriptionDiv::-webkit-scrollbar-thumb{
@@ -342,16 +342,20 @@ footer img {
         background: white;
         opacity: 0.6;
         font-weight: normal;
-        padding: 1rem 2rem;
+        width: 50rem;
         text-align: left;
         background: fixed;
+       
     }
 
     .top thead th:nth-child(1) {
-        width: 72.4%;
+        width: 70rem;
+        
     }
     .top thead th:nth-child(2) {
-        width: 57.1%;
+        width: 75rem;
+        border: red 1px solid;
+        margin-left: 25rem;
     }
     .descriptionDiv{
         overflow: none;
