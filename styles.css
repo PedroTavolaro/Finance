@@ -178,6 +178,12 @@ header h1 {
     width: 24.1%;
 }
 
+.mobile {
+    visibility: hidden;
+    height: 0rem;
+    width: 0rem;
+}
+
 .descriptionDiv::-webkit-scrollbar-thumb{
     border-radius: 6px;
     background: linear-gradient(to top, #00ccff, #0059ff);
@@ -207,7 +213,7 @@ header h1 {
     width: 100%;
     overflow-y: scroll;
     height: 30rem;
-    margin-top: 0rem;
+    margin-top: -4rem;
     margin-left: 0rem;
 }
 
@@ -338,24 +344,34 @@ footer img {
 
 @media screen and (max-width: 1080px){
     
+    
+.top{
+    visibility: hidden;
+}
+.mobile{
+    visibility: visible;
+    height: 1rem;
+}
+
     table thead th{
         background: white;
         opacity: 0.6;
         font-weight: normal;
-        width: 50rem;
-        text-align: left;
+        border: green 1px solid;
+        text-align: center;
         background: fixed;
-       
+        padding: 1.8rem 1rem;
+        width: 50rem;
     }
 
-    .top thead th:nth-child(1) {
-        width: 70rem;
+     thead th:nth-child(1) {
+        
         
     }
-    .top thead th:nth-child(2) {
-        width: 75rem;
+    thead th:nth-child(2) {
+        
         border: red 1px solid;
-        margin-left: 25rem;
+        
     }
     .descriptionDiv{
         overflow: none;
