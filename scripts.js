@@ -89,7 +89,7 @@ const DOM = {
             <td class="${CSSClass}">${amount}</td>
             <td class="date">${transaction.date}</td>
             <td>
-                <img onclick="Transaction.remove(${index})" src="./assets/minus.svg" alt="remover transação">
+                <img onclick="Transaction.remove(${index})" src="./assets/lixeira.png" width='27'" alt="remover transação">
             </td>
             `
             
@@ -100,7 +100,7 @@ const DOM = {
         <td class="${CSSClass}">${amount}</td>
         <td class="date">${transaction.date}</td>
         <td>
-            <img onclick="Transaction.remove(${index})" src="./assets/minus.svg" alt="remover transação">
+            <img onclick="Transaction.remove(${index})" src="./assets/lixeira.png" width='27' alt="remover transação">
         </td>
         `
         return html
