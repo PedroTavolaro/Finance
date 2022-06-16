@@ -159,9 +159,9 @@ header h1 {
 .mobile{
     width: 100%;
     border-spacing: 0 0.5rem;
-    color: #969cb3;
+    color: #7a7a7b;
     background: white;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .mobile thead th {
@@ -217,7 +217,7 @@ header h1 {
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
-    color: #969cb3;
+    color: #7a7a7b;
 }
 
 table thead tr th:first-child,
@@ -232,7 +232,7 @@ table tbody tr td:last-child{
 
 table thead th{
     background: white;
-    opacity: 0.6;
+    opacity: 0.9;
     font-weight: normal;
     padding: 1rem 2rem;
     text-align: left;
@@ -352,7 +352,7 @@ footer img {
 
     table thead th{
         background: white;
-        opacity: 0.6;
+        opacity: 0.7;
         font-weight: normal;
         text-align: center;
         background: fixed;
