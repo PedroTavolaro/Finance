@@ -77,6 +77,7 @@ O <b>Finance</b> projeto desenvolvido pensando em ajudar as pessoas no controle 
 > **⚠ Atenção !** <br> Antes de prosseguir com o passo a passo abaixo você precisa ter instalado em sua máquina o gerenciador de pacote [Yarn](https://classic.yarnpkg.com/en/docs/install) e expo.
 
 <br>
+
 ## 📝 Clonando o repositório e entrando no diretório criado.
 
 $ git clone https://github.com/PedroTavolaro/Finance.git
