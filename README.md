@@ -8,11 +8,6 @@
   
 [Descrição](#desc) ✦ [Tecnologias](#tec) ✦ [Projeto](#Projeto) ✦ [Rodando localmente](#local) ✦ [Licença](#lic)
 
-<br>
-
-
-<br>
-
 </h4>
 
 <br>
@@ -31,9 +26,15 @@ O <b>Finance</b> projeto desenvolvido pensando em ajudar as pessoas no controle 
 🛸 Tecnologias
 </h2>
 
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;
+<br>
+
+![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
+<br>
+
+![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
 
 <br>
-  
   
 <h2>⚔ Funcionalidades</h2>
 
@@ -51,7 +52,7 @@ O <b>Finance</b> projeto desenvolvido pensando em ajudar as pessoas no controle 
 </h2>
 
 
-<a href="https://controlfinance.vercel.app">
+<a href="https://financecontrol.vercel.app">
 <img title="finance.it" src="./public/github/dark.png">
 </a>
 <span align="center"><h6>Clique na imagem para visualizar a aplicação</h6></span>
