@@ -79,7 +79,9 @@ O <b>Finance</b> projeto desenvolvido pensando em ajudar as pessoas no controle 
 <br>
 ## 📝 Clonando o repositório e entrando no diretório criado.
 
-$ git clone git@github.com:pedrotavolaro/Finance.git && cd Finance
+$ git clone https://github.com/PedroTavolaro/Finance.git
+
+$ cd Finance
 
 <br>
 
